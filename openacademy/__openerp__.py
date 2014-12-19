@@ -25,14 +25,15 @@
 
     # always loaded
     'data': [
-	    'view/openacademy_course_view.xml',
-        'view/openacademy_session_view.xml',
+	#'view/openacademy_course_view.xml',
+        #'view/openacademy_session_view.xml',
         # 'security/ir.model.access.csv',
         # 'templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         #'demo.xml',
+	'demo/openacademy_course_demo.xml',
     ],
     'installable' : True,
     'auto_install' : False,
