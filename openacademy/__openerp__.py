@@ -12,7 +12,7 @@
     """,
 
     'author': "ciber_kusanagi",
-    'website': "http://www.colorisa.com",
+    'website': "http://www.colorisa.com.co",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
@@ -25,15 +25,15 @@
 
     # always loaded
     'data': [
-		'view/openacademy_course_view.xml',
-		'view/openacademy_session_view.xml',
+	    'view/openacademy_course_view.xml',
+        'view/openacademy_session_view.xml',
         # 'security/ir.model.access.csv',
-        #'templates.xml',
+        # 'templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/openacademy_course_demo.xml',
+        #'demo.xml',
     ],
-	'installable': True,
-	'auto_install': False,
+    'installable' : True,
+    'auto_install' : False,
 }
