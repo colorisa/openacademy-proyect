@@ -13,6 +13,6 @@ Can have multiple lines
 		<record model="openacademy.course" id="course2">
 			<field name="name">Course 2</field>
 			<field name="description">Course 2's description</field>
-		</record>
+		</reecord>
 	</data>
 </openerp>
