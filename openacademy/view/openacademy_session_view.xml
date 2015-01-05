@@ -12,6 +12,8 @@
             <field name="arch" type="xml">
                 <form string="Session Form">
 				<header>
+				<!--Action workflow-ish-->
+				<!--
 					<button name="action_draft" type="object"
 							string="Reset to draft"
 							states="confirmed,done"/>
@@ -22,7 +24,18 @@
 							string="Mark as done" states="confirmed"
 							class="oe_highlight"/>
 					<field name="state" widget="statusbar"/>
-				</header>				
+						-->
+						<button name="button_draft" type="workflow"
+                                string="Reset to draft"
+                                states="confirmed,done"/>
+                        <button name="button_confirm" type="workflow"
+                                string="Confirm" states="draft"
+                                class="oe_highlight"/>
+                        <button name="button_done" type="workflow"
+                                string="Mark as done" states="confirmed"
+                                class="oe_highlight"/>
+                        <field name="state" widget="statusbar"/>
+				</header>		
                     <sheet>
 						<group string="General">
 							<field name="course_id"/>

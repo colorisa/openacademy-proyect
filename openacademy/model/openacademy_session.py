@@ -26,7 +26,10 @@ class Session(models.Model):
 	attendees_count = fields.Integer(
 				string="Attendees count", compute='_get_attendees_count', store=True)
 	color = fields.Integer() #Campo obligatorio para la vista Kanban
-
+	
+	'''
+	Inica clase y funciones para el workflow - ish (como un workflow pero con status)
+	'''
 	state = fields.Selection([
 		 ('draft', "Draft"),
 		 ('confirmed', "Confirmed"),
@@ -44,6 +47,9 @@ class Session(models.Model):
 	@api.one
 	def action_done(self):
 		self.state = 'done'
+	'''
+	Terminan clases y funciones para el workflow - ish
+	'''
 	
 	@api.one
 	@api.depends('seats','attendee_ids')
