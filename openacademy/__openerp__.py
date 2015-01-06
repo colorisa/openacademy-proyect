@@ -31,6 +31,7 @@
 		'workflow/openacademy_session_workflow.xml',
 		'security/security.xml',
 		'security/ir.model.access.csv',
+		'view/openacademy_wizard_view.xml',
         # 'security/ir.model.access.csv',
         # 'templates.xml',
     ],
