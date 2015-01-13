@@ -4,7 +4,7 @@ HOST = 'localhost'
 PORT = 8069
 DB = 'Prueba'
 USER = 'admin'
-PASS = 'c0l0r1s4'
+PASS = ''
 ROOT = 'http://%s:%d/xmlrpc/' % (HOST,PORT)
 
 # 1. Login
